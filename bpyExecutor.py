@@ -57,7 +57,7 @@ def register():
     kc = wm.keyconfigs.addon
     if kc:
         km = kc.keymaps.new(name='Edit', space_type='TOPBAR')
-        kmi = km.keymap_items.new(be.bl_idname, 'LEFT_BRACKET', 'PRESS', ctrl=True, shift=False)
+        kmi = km.keymap_items.new(be.bl_idname, 'Y', 'PRESS', alt=True, ctrl=False, shift=False)
         addon_keymaps.append((km, kmi))
 
 def unregister():
